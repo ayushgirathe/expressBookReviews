@@ -10,7 +10,7 @@ const isValid = (username) => {
   return users.some(user => user.username === username);
 }
 
-// Check if username and password match records
+// Check if usearname and password match records
 const authenticatedUser = (username, password) => {
   const user = users.find(user => user.username === username);
   return user && user.password === password;
